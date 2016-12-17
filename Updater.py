@@ -35,7 +35,7 @@ class Updater:
 		print("commit number is " + str(self.commitnumber))
 		print("update cycle is " + str(self.updatecycle))
 
-		for self.count in range(1,self.commitnumber):
+		for self.count in range(0,self.commitnumber):
 			self.add = subprocess.call(["git","add","."])#git add .の実行
 			print("sucessfully added")
 			self.commit = str(subprocess.call(["git","commit","-m",self.committime]))#git commit の実行

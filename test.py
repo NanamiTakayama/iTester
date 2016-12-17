@@ -2,7 +2,7 @@ from updater import Updater
 import time
 
 while True:
-    test = Updater(2,1)
+    test = Updater(1,1)
     test.newapp()
     print(test)
     test.addcommit()
