@@ -31,7 +31,7 @@ class Updater:
 		self.chagedapp.write(self.temporalyapp)
 		self.chagedapp.close()
 
-	def update(self):
+	def addcommit(self):
 		print("commit number is " + str(self.commitnumber))
 		print("update cycle is " + str(self.updatecycle))
 
@@ -40,7 +40,6 @@ class Updater:
 			print("sucessfully added")
 			self.commit = str(subprocess.call(["git","commit","-m",self.committime]))#git commit の実行
 				
-			
 			if self.commit == "0":
 				print("sucessfully commited at" + self.committime)
 				self.count += 1
@@ -58,5 +57,5 @@ class Updater:
 
 		else:
 			print(self.error)
-			break
+			pass
 
