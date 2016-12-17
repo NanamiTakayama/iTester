@@ -1,4 +1,4 @@
-from Updater import Updater
+from updater import Updater
 import time
 
 while True:
