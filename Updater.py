@@ -25,7 +25,7 @@ class Updater:
 
 	def newapp(self):
 		print("generating new app")
-		self.temporalyapp = str(commands.getoutput("cat app.txt"))#app.pyを取得する
+		self.temporalyapp = str(commands.getoutput("cat template.py"))#app.pyを取得する
 		self.temporalyapp = self.temporalyapp.replace("Hello", self.committime) #change time stamp
 		self.chagedapp = open('./app.py','w')#nf for newfile
 		self.chagedapp.write(self.temporalyapp)
